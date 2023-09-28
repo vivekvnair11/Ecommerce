@@ -1,0 +1,63 @@
+.order-summary{
+  width: 35%;
+  height: fit-content;
+  background-color: #F7FAFC;
+  
+}
+.order-summary-content{
+  margin: 36px 46px 46px 46px;
+}
+
+.order-summary-head{
+  font-size: 20px;
+}
+.order-summay-image img{
+  width:30%;
+  height: 30%;
+  border-radius: 5px;
+
+}
+.order-summay-image{
+  margin: 10% 0px 10px 0px;
+}
+.order-summary-cart{
+  display: flex;
+  margin: 10% 0px 10px 0px;
+}
+
+.order-summary-offertxt {
+  color: #718096;
+  font-size: 16px;
+}
+
+.order-summary-offer{
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0px 10px 0px;
+}
+.order-summary-input input[type="text"]{
+  background:#E2E8F0;
+  border: none;
+  width: fit-content;
+  height: 59px;
+  border-radius: 5px;
+}
+.order-summary-input-btn button{
+color: #4897cb;
+background: white;
+  width: 150px;
+  height: 40px;
+  margin: 5%;
+  border-radius: 5px;
+  border-color: #4897cb;
+  box-shadow: none;
+}
+.order-values{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+}
+
+.order-summary-shipping-value{
+  color: #38B2AC;
+}

@@ -1,0 +1,9 @@
+
+.pop-slider {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+}

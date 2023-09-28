@@ -1,0 +1,118 @@
+
+
+
+.product-details{
+  width: 90%;
+  height: 60%;
+  margin-top: 30%;
+}
+
+
+.company-name{
+  text-align: left;
+  color: #FF7E1B;
+  font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+font-family: Kumbh Sans;
+
+}
+
+.product-heading h2{
+  text-align: left;
+    width: 75%;
+    height: 96px;
+    color: #1D2026;
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+margin-top: 0% !important;
+margin-bottom: 0%;
+
+}
+
+.product-description{
+  color: #69707D;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+.product-pricing{
+  width: 176px;
+  height: 68px;
+  text-align: left;
+}
+.pricing{
+  display: flex;
+  gap: 3%;
+}
+.offer-price{
+  font-size: 28px;
+
+}
+.offer{
+  border-radius: 6px;
+  background: #FFEEE2;
+  color: #FF7E1B;
+  width: 51px;
+height: 27px;
+text-align: -webkit-center;
+margin: 5%;
+font-weight: 600;
+}
+
+.initial-price{
+    width: 63px;
+    height: 26px;
+    color: #B6BCC8;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 162.5% */
+text-decoration: line-through;
+}
+
+.product-components{
+  display: flex;
+  margin-top: 7%;
+  gap: 10%;
+}
+
+.product-components .MuiBox-root.css-10x3ego {
+  width: 141px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .product-details{
+    margin: 4%;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+.product-components{
+  flex-direction: column;
+
+}
+.product-pricing{
+  display: flex;
+    gap: 75%;
+   
+}
+.initial-price{
+  margin: 3%;
+}
+
+}

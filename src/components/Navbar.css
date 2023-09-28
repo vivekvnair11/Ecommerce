@@ -1,0 +1,136 @@
+
+.nav {
+  display: flex;
+}
+.logo{
+  width: 137.5px;
+  height: 20px;
+  margin-top: 18px;
+}
+.hamburger{
+  
+  width: 16px;
+  height: 15px;
+  padding-top: 5px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ 
+}
+.hr-line{
+
+  background: #E4E9F2 !important ;
+  border: none;
+  margin: 0%;
+  height: 2px;
+}
+
+.nav-mob {
+  list-style: none;
+}
+
+.nav-mob li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 46.5px;
+}
+
+.hamburger {
+  display: none; 
+}
+.close-icon.open{
+  display:none ;
+}
+
+@media screen and (max-width: 800px) {
+
+  .hamburger{
+    display: block;
+  }
+  .nav{
+    gap: 12px;
+  }
+
+  .nav-mob{
+    display: none;
+  }
+  
+  .navbar{
+   width: max-content;
+   height: max-content;
+  }
+
+  .hr-line{
+    display: none;
+  }
+
+  .mobile-sidebar {
+    width: 200px; /* Adjust the width as needed */
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background-color:white; /* Sidebar background color */
+    transition: left 0.3s ease-in-out;
+  }
+  .mobile-sidebar.open {
+    left: 0; /* Display the sidebar */
+  }
+  .close-icon  {
+   position: fixed;
+   display: block;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .logo{
+    margin: 10px;
+  }
+
+  
+  .hamburger {
+    
+    width: 16px;
+    height: 15px;
+    padding-top: 11px;
+  }
+  .mob-content{
+    list-style: none;
+    padding-top: 76px;
+    padding-left: 0%;
+  }
+  li{
+    margin-left: 25px;
+    text-align: left;
+    padding: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

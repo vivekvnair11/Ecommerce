@@ -1,0 +1,27 @@
+.addproduct button {
+  width: 175px;
+height: 35px;
+border-radius: 5px;
+background: #FFAB6A;
+padding: 0%;
+border: 0cm;
+color: white;
+}
+
+.addproduct button .css-i4bv87-MuiSvgIcon-root {
+  width: 10%;
+  height: 32%;
+}
+.addproduct{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+
+.addproduct button{
+
+  width: 100%;
+}
+
+}

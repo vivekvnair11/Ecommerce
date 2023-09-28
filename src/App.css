@@ -1,38 +1,58 @@
 .App {
   text-align: center;
+  margin-left: 165px;
+  margin-right: 165px;
+  position: relative;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.Home{
+  display: flex;
+
+}
+
+
+
+/* .navbar .css-jcn4dz-MuiBadge-badge {
+  background: #dcd9d6 !important;
+ 
+} */
+
+.MuiBadge-root.css-1c32n2y-MuiBadge-root .css-jcn4dz-MuiBadge-badge {
+  background-color: red !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+  color: #FFAB6A !important ;
+  border: none !important;
+  background-color: #F6F8FD !important;
+  
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedOutlined.MuiButtonGroup-groupedOutlinedHorizontal.MuiButtonGroup-groupedOutlinedPrimary.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.inc-dec.MuiButtonGroup-middleButton.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+  color: black !important;
+  font-size: 16px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .App{
+    margin-left: auto;
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .Home{
+    flex-direction: column;
   }
 }
+
+
