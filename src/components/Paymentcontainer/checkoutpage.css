@@ -3,3 +3,23 @@
   justify-content: center;
   gap: 2%;
 }
+
+@media screen and (max-width: 800px) {
+  .checkout-page{
+    flex-direction: column;
+    width: auto;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+.checkout-page{
+  width: fit-content;
+}
+
+}

@@ -1,12 +1,12 @@
-import { useCount } from '../App';
-import logo from '../images/logo.svg'
+import { useCount } from '../../App';
+import logo from '../../images/logo.svg'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import React, { useState } from 'react';
 import Badge from '@mui/material/Badge';
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser, faBars,faTimes } from "@fortawesome/free-solid-svg-icons";
-import Cart from './Cart';
+import Cart from '../Cart/Cart';
 
 
 
@@ -50,19 +50,19 @@ function Navbar() {
         <FontAwesomeIcon icon={faTimes} className='close-icon' onClick={closeSidebar} />
 
         <ul className="mob-content">
-        <li>
+        <li id='nav-one'>
           <a>Collections</a>
         </li>
-        <li>
+        <li id='nav-two'>
           <a>Men</a>
         </li>
-        <li>
+        <li id='nav-three'>
           <a>Women</a>
         </li>
-        <li>
+        <li id='nav-four'>
           <a>About</a>
         </li>
-        <li>
+        <li id='nav-five'>
           <a>Contact</a>
         </li>
       </ul>
@@ -75,19 +75,19 @@ function Navbar() {
 
     <img src={logo} className="logo" alt="logo" />
       <ul className="nav-mob">
-        <li>
+      <li className='nav-one'>
           <a>Collections</a>
         </li>
-        <li>
+        <li className='nav-two'>
           <a>Men</a>
         </li>
-        <li>
+        <li className='nav-three'>
           <a>Women</a>
         </li>
-        <li>
+        <li className='nav-four'>
           <a>About</a>
         </li>
-        <li>
+        <li className='nav-five'>
           <a>Contact</a>
         </li>
       </ul>

@@ -8,8 +8,8 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 
 
-import { useCount } from '../App';
-import '../App.css'
+import { useCount } from '../../App';
+import '../../App.css'
 
 
 
@@ -55,9 +55,10 @@ function Count() {
           <Button className='inc-dec'>{count}</Button>
           <Button className='inc-dec'
             aria-label="increase"
-            onClick={() => {
-              setCount(count + 1);
-            }}
+             onClick={() => {
+            setCount(count + 1);
+           }}
+            
           >
             <AddIcon fontSize="small" />
           </Button>

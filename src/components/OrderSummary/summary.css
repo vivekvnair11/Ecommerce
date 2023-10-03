@@ -18,11 +18,11 @@
 
 }
 .order-summay-image{
-  margin: 10% 0px 10px 0px;
+  margin: 5% 0px 10px 0px;
 }
 .order-summary-cart{
   display: flex;
-  margin: 10% 0px 10px 0px;
+  margin: 5% 0px 10px 0px;
 }
 
 .order-summary-offertxt {
@@ -33,7 +33,7 @@
 .order-summary-offer{
   display: flex;
   justify-content: space-between;
-  margin: 10% 0px 10px 0px;
+  margin: 5% 0px 10px 0px;
 }
 .order-summary-input input[type="text"]{
   background:#E2E8F0;
@@ -60,4 +60,32 @@ background: white;
 
 .order-summary-shipping-value{
   color: #38B2AC;
+}
+
+  @media screen and (max-width: 990px) {
+    .order-summary{
+      width: fit-content;
+    }
+
+    .order-summary-content{
+      margin:5%;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .order-summary-cart {
+    display: block;
+  }
+
+  .order-summary-count{
+    width: min-content;
+  }
+
+  .order-summary-input-btn{
+    width: fit-content;
+  }
 }

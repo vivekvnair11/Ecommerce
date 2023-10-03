@@ -1,7 +1,7 @@
 import React from 'react'
-import '../components/css/ProductDescription.css'
-import Count from '../components/Count'
-import AddtoCart from '../components/AddtoCart'
+import '../Product description/ProductDescription.css'
+import Count from '../Count/Count'
+import AddtoCart from '../Add-to-cart/AddtoCart'
 
 function ProductDescription() {
   return (
@@ -12,7 +12,7 @@ function ProductDescription() {
       </div>
       <div className='product-heading'>
         <h2>
-      Fall Limited Edition</h2>
+      Fall Limited Edition Sneakers</h2>
       </div>
       <div className='product-description'><p>
       These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.

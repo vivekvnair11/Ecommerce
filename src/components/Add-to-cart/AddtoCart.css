@@ -19,8 +19,12 @@ color: white;
 
 @media screen and (max-width: 500px) {
 
-.addproduct button{
+.addproduct{
 
+  width: -webkit-fill-available !important;
+}
+
+.addproduct button.cart-button.addcart{
   width: 100%;
 }
 

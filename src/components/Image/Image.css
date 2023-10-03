@@ -1,0 +1,109 @@
+.carousel-status {
+  display:none ;
+} 
+.image-carousal{
+  position: absolute;
+  z-index: 1;
+  width: 50px !important;
+}
+/* .modal{
+  display: none;
+} */
+/* {
+  position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0), black), linear-gradient(to right, black, rgba(0,0,0,0));
+    z-index: 1;
+} */
+
+ .carousel .thumbs{
+  padding: 0%;
+}
+.carousel-root {
+  /* width: 50% !important; */
+  /* height: 445px !important; */
+  padding-top: 90px;
+  margin-left: 5%;
+  position: relative; /* Ensure relative positioning */
+  z-index: 1; /* Display below the .modal-image .carousel-root */
+}
+
+.carousel{
+  border-radius: 5px;
+}
+
+ .carousel .thumb.selected, .carousel .thumb:hover{
+  border-radius: 5px;
+  border: 3px solid #FF7E1B !important;
+}
+
+.body-black-background {
+  background: rgba(15, 14, 14, 0.35); 
+  
+}
+.carousel .thumb{
+  padding: 0% !important;
+  border: none !important;
+}
+button.control-arrow {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+button.control-arrow {
+  display: block;
+}}
+
+@media screen and (max-width: 900px) {
+
+
+button.control-arrow.control-next .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  background: url('../../images/chevron.png');
+  background-repeat: no-repeat;
+  margin-top: 50%;
+  opacity: 1;
+}
+.carousel.carousel-slider .control-arrow:hover{
+  background: url('../../images/chevronleft.png');
+  background-repeat: no-repeat;
+  margin-top: 50%;
+  opacity: 1;
+  transition: none;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before{
+  border-top: 0;
+  border-bottom: 0;
+  transition: none;
+}
+
+.carousel-root{
+  margin-left: 0%;
+  margin-right: 0%;
+  width: fit-content !important;
+  height: fit-content !important;
+  padding-top: 0%;
+}     
+.overlay{
+  width: fit-content !important;
+  height: fit-content !important;
+}
+.body-black-background {
+  background:transparent !important;
+}
+
+.thumbs-wrapper{
+  display: none;
+}
+.navbar{
+  margin-right: 0%;
+}
+
+
+
+}
+
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import '../components/css/AddtoCart.css';
+import '../Add-to-cart/AddtoCart.css';
 
 function AddtoCart({ children, showIcon,onClick }) { // Use destructuring to get the "children" prop
   return (

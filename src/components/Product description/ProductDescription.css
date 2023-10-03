@@ -89,13 +89,34 @@ text-decoration: line-through;
 .product-components .MuiBox-root.css-10x3ego {
   width: 141px;
 }
+@media screen and (max-width: 1300px) {
+
+  .product-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-components{
+    flex-direction: column;
+    gap: 0%;
+    align-items: center;
+  }
+  .product-heading h2{
+    height: auto;
+  }
+}
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
   .product-details{
     margin: 4%;
   }
+
+  .product-components{
+    flex-direction: row;
+    gap: 5%;
+  }
+
 
 }
 
@@ -104,6 +125,7 @@ text-decoration: line-through;
 
 .product-components{
   flex-direction: column;
+  gap: 1%;
 
 }
 .product-pricing{
@@ -115,4 +137,19 @@ text-decoration: line-through;
   margin: 3%;
 }
 
+.product-components .MuiButtonGroup-root.MuiButtonGroup-outlined.css-edsu1d-MuiButtonGroup-root{
+
+   display: flex !important;
+   justify-content: space-between;
+   background: #F6F8FD;;
+  
+}
+.product-components .MuiBox-root.css-10x3ego{
+  width: 100% ;
+}
+}
+@media screen and (max-width: 500px) {
+  .product-pricing{
+    gap: 50%;
+  }
 }

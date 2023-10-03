@@ -1,12 +1,14 @@
 import './App.css';
 import React, { createContext, useContext, useState } from 'react';
-import Navbar from '../src/components/Navbar';
-import Image from './components/Image';
-import Count from './components/Count';
-import ProductDescription from './components/ProductDescription';
+import Navbar from './components/Navbar/Navbar';
+import Image from './components/Image/Image';
+import Count from './components/Count/Count';
+import ProductDescription from './components/Product description/ProductDescription';
 import CheckoutPage from './components/Paymentcontainer/CheckoutPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Cart from './components/Cart';
+import Cart from './components/Cart/Cart';
+import ImageCorousal from './components/Pop-Up-Image/ImageCorousal';
+import { useEffect } from 'react';
 
 const CountContext = createContext();
 
@@ -21,8 +23,6 @@ function App() {
     const [count, setCount] = useState(0);
 
 
-  
-
   return (
     <Router>
     <CountContext.Provider value={{ count, setCount , setAppVisibility}} >
@@ -34,6 +34,8 @@ function App() {
         <ProductDescription className="productdescription"></ProductDescription>
 
         </div>
+       
+     
   
      
       

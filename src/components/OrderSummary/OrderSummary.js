@@ -1,6 +1,6 @@
 import React from 'react'
 import image1 from "../../images/image-product-1.jpg"
-import Count from '../Count';
+import Count from '../Count/Count';
 import './summary.css'
 import { useCount } from '../../App';
 import { useState, useEffect } from 'react';
@@ -30,7 +30,7 @@ function OrderSummary() {
           </div>
 
           <div className='order-summay-image'>
-           <img src={image1}></img>
+           <img src={image1} alt='11'></img>
           </div>
 
           <div className='order-summary-cart'>

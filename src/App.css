@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  margin-left: 165px;
-  margin-right: 165px;
+  margin-left: 100px;
+  margin-right: 100px;
   position: relative;
 }
 
@@ -9,9 +9,14 @@
   height: 40vmin;
   pointer-events: none;
 }
-.Home{
+.Home {
   display: flex;
 
+}
+.Home > div {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
@@ -45,13 +50,19 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPr
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .App{
     margin-left: auto;
     margin-right: auto;
   }
   .Home{
     flex-direction: column;
+  }
+
+  .Home > div {
+    width: fit-content;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
 

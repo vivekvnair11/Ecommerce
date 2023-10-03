@@ -14,6 +14,18 @@
   padding-top: 5px;
 }
 
+.nav-mob a{
+  padding: 8%;
+  text-decoration: none; /* Remove the default underline for all links */
+  border-bottom: 2px solid transparent; /* Add a transparent underline */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.nav-mob a:hover {
+ border-color: #FF7E1B;
+ height: 2px; /* Add underline on hover for all links */
+}
+
 
 
 .navbar {
@@ -53,8 +65,17 @@
 .close-icon.open{
   display:none ;
 }
+@media screen and (max-width: 1300px) {
+.nav-mob li
+{
+  margin-right: 0px;
+}
+.nav-mob a{
+  padding-left: 0%;
+}
 
-@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 900px) {
 
   .hamburger{
     display: block;
@@ -67,10 +88,7 @@
     display: none;
   }
   
-  .navbar{
-   width: max-content;
-   height: max-content;
-  }
+  
 
   .hr-line{
     display: none;

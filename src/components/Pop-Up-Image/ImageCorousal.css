@@ -1,0 +1,91 @@
+.modal-image .carousel-root {
+  width: 550px !important;
+  height: 550px !important;
+
+   /* Display above the .carousel-root */
+}
+.modal-image{
+  position: absolute;
+  top: 0px;
+}
+/* .modal-image .carousel.carousel-slider .control-arrow{
+  background-color: rgb(17, 196, 41);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 5px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+button.control-arrow.control-next .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  background: url('../../images/chevron.png');
+  background-repeat: no-repeat;
+  margin-top: 50%;
+  opacity: 1;
+}
+.carousel.carousel-slider .control-arrow:hover{
+  background: url('../../images/chevronleft.png');
+  background-repeat: no-repeat;
+  margin-top: 50%;
+  opacity: 1;
+  transition: none;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before{
+  border-top: 0;
+  border-bottom: 0;
+  transition: none;
+}
+
+.modal-image svg.fa-xmark{
+  color: white;
+}
+.modal-image .carousel.carousel-slider 
+{
+  /* width: 550px !important;
+  height: 550px !important; */
+
+  padding-top: 0%;
+}
+
+.modal-image .carousel {
+  margin-left: 50%;
+}
+
+.modal-image .control-arrow{
+  display: block;
+} 
+
+.toggle {
+  position:absolute;
+  top: 55px; /* Adjust the top distance as needed */
+left: 150%; /* Adjust the right distance as needed */
+  cursor: pointer;
+  z-index: 10; 
+  color: #FF7E1B;
+}
+
+.overlay {
+
+  width: 50px;
+  height:535px;
+ 
+}
+
+@media screen and (max-width: 800px) {
+.modal-image{
+  display: none;
+  height: fit-content;
+  width: fit-content;
+  
+}
+
+
+
+}

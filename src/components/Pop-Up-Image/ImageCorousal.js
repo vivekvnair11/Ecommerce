@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import image1 from "../images/image-product-1.jpg"
-import image2 from "../images/image-product-2.jpg"
-import image3 from "../images/image-product-3.jpg"
-import image4 from "../images/image-product-4.jpg"
+import image1 from "../../images/image-product-1.jpg"
+import image2 from "../../images/image-product-2.jpg"
+import image3 from "../../images/image-product-3.jpg"
+import image4 from "../../images/image-product-4.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import close from "../images/icon-close.svg"
-import "../components/css/ImageCorousal.css"
+
+import "../Pop-Up-Image/ImageCorousal.css"
 
 function ImageCorousal({display,toggle}) {
  
@@ -23,16 +23,16 @@ function ImageCorousal({display,toggle}) {
           </div>
           <Carousel>
             <div id='thumbnail'>
-              <img src={image1} />
+              <img src={image1} alt='img1'/>
             </div>
             <div>
-              <img src={image2} />
+              <img src={image2} alt='img1'/>
             </div>
             <div>
-              <img src={image3} />
+              <img src={image3} alt='img1'/>
             </div>
             <div>
-              <img src={image4} />
+              <img src={image4} alt='img1'/>
             </div>
           </Carousel>
         </div>

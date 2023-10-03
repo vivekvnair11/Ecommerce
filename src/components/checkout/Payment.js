@@ -1,9 +1,43 @@
 import React from 'react'
 import '../checkout/payment.css'
-import AddtoCart from '../AddtoCart'
+import AddtoCart from '../Add-to-cart/AddtoCart'
+import { useState } from 'react';
 
 
 function Payment() {
+
+  const [cardNumber, setCardNumber] = useState('#### #### #### ####'); // Initial value with placeholders
+  const [cardName, setCardName] = useState('FULL NAME');
+  const [cardMonth, setCardMonth] = useState('MM');
+  const [cardYear, setCardYear] = useState('MM');
+  const handleCardNumberChange = (e) => {
+    const newCardNumber = e.target.value;
+
+    // Use a regular expression to format the card number as "#### #### #### ####"
+    const formattedCardNumber = newCardNumber
+      .replace(/\s/g, '') // Remove spaces
+      .match(/.{1,4}/g) // Split into groups of 4 characters
+      .join(' '); // Join with spaces
+
+    setCardNumber(formattedCardNumber);
+  };
+
+  const handleNameChange = (e) =>{
+    const newCardName = e.target.value;
+    const updatedName =newCardName;
+    setCardName(updatedName)
+  }
+  const handleCardExpirationMonth = (e) => {
+    const newCardExpirationMonth = e.target.value;
+    setCardMonth(newCardExpirationMonth);
+  };
+
+  const handleCardExpirationYear = (e) => {
+    const newCardExpirationYear = e.target.value;
+    setCardYear(newCardExpirationYear);
+  };
+
+  
   return (
     <div>
 
@@ -47,14 +81,14 @@ function Payment() {
 
           
         </div>
-        <div class="number">#### #### #### ####</div>
+        <div class="number">{cardNumber}</div>
         <div class="card-holder">
           <label>Card holder</label>
-          <div></div>
+          <label>{cardName}</label>
         </div>
         <div class="card-expiration-date">
           <label>Expires</label>
-          <div></div>
+          <label>{cardMonth}/{cardYear}</label>
         </div>
       </div>
 
@@ -63,21 +97,26 @@ function Payment() {
   <form class="form" autocomplete="off" novalidate>
     <fieldset>
       <label for="card-holder">Card Number</label>
-      <input type="num" id="card-holder" maxlength="16" />
+      <input type="text"
+              id="card-holder"
+              maxlength="16" // Allow for spaces (#### #### #### ####)
+              onChange={handleCardNumberChange} />
      
     
     </fieldset>
     <fieldset>
       <label for="card-holder">Card holder</label>
-      <input type="text" id="card-holder" />
+      <input type="text"
+              id="card-name"
+              maxlength="16" 
+              onChange={handleNameChange} />
     </fieldset>
     <label for="card-expiration-month">Expiration date</label>
     <div className='expiry'>
     <fieldset class="fieldset-expiration">
-   
       
       <div class="select">
-        <select id="card-expiration-month">
+        <select id="card-expiration-month" onChange={handleCardExpirationMonth} >
           <option>Month</option>
           <option>01</option>
           <option>02</option>
@@ -94,7 +133,7 @@ function Payment() {
         </select>
       </div>
       <div class="select">
-        <select id="card-expiration-year" placeholder='year'>
+        <select id="card-expiration-year" placeholder='year' onChange={handleCardExpirationYear} >
           <option>year</option>
           <option>2016</option>
           <option>2017</option>

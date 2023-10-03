@@ -1,13 +1,13 @@
 import React from 'react';
-import '../components/css/Cart.css';
-import { useCount } from '../App';
-import image1 from "../images/image-product-1.jpg";
+import '../Cart/Cart.css';
+import { useCount } from '../../App';
+import image1 from "../../images/image-product-1.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
-import AddtoCart from './AddtoCart';
+import AddtoCart from '../Add-to-cart/AddtoCart';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import OrderSummary from './OrderSummary/OrderSummary';
+import OrderSummary from '../OrderSummary/OrderSummary';
 
 
 function Cart({ isOpen, toggleCart }) {
