@@ -4,7 +4,7 @@
   margin: 5%;
 }
 .checkout{
-  box-shadow: 0 0 5px 5px #61777a54;
+  box-shadow: 0 2px 8px 8px  #61777a54;
 }
 /* Form */
 .form fieldset {
@@ -13,6 +13,9 @@
   padding: 10px 0;
   position: relative;
   clear: both;
+}
+.form .select select{
+  top: 10px !important;
 }
 
 .form.fieldset-expiration {

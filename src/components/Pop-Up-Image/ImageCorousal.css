@@ -4,6 +4,7 @@
 
    /* Display above the .carousel-root */
 }
+
 .modal-image{
   position: absolute;
   top: 0px;
@@ -24,18 +25,31 @@
     margin-bottom: auto;
 } */
 button.control-arrow.control-next .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
-  background: url('../../images/chevron.png');
+  background: url('../../images/Group\ 18.svg');
   background-repeat: no-repeat;
   margin-top: 50%;
   opacity: 1;
 }
-.carousel.carousel-slider .control-arrow:hover{
-  background: url('../../images/chevronleft.png');
-  background-repeat: no-repeat;
-  margin-top: 50%;
-  opacity: 1;
-  transition: none;
+button.control-arrow.control-next, button.control-arrow.control-prev{
+  width: 56px;
+  height: 56px;
 }
+
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: url('../../images/Group\ 18.svg');
+}
+
+button.control-arrow.control-prev{
+  background: url('../../images/Group\ 18.svg');
+  transform: rotate(180deg); 
+
+}
+
+.modal .carousel.carousel-slider {
+  box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.75);
+}
+
 
 .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before{
   border-top: 0;
@@ -85,6 +99,21 @@ left: 150%; /* Adjust the right distance as needed */
   width: fit-content;
   
 }
+button.control-arrow.control-next .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  background: url('../../images/chevron.png');
+  background-repeat: no-repeat;
+  margin-top: 50%;
+  opacity: 1;
+}
+.carousel.carousel-slider .control-arrow:hover {
+  background: url('../../images/chevron.png');
+  background-repeat: no-repeat;
+}
+button.control-arrow.control-next, button.control-arrow.control-prev{
+  width: 28px;
+  height: 28px;
+}
+
 
 
 

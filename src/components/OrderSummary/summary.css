@@ -24,6 +24,13 @@
   display: flex;
   margin: 5% 0px 10px 0px;
 }
+.order-summary-count .css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+  color: #718096  ;
+}
+.order-summary-count .dec, .order-summary-count .inc {
+  border-radius: 5px;
+  background: var(--300, #E2E8F0) !important;
+}
 
 .order-summary-offertxt {
   color: #718096;
@@ -39,7 +46,7 @@
   background:#E2E8F0;
   border: none;
   width: fit-content;
-  height: 59px;
+  height: 40px;
   border-radius: 5px;
 }
 .order-summary-input-btn button{
@@ -47,7 +54,7 @@ color: #4897cb;
 background: white;
   width: 150px;
   height: 40px;
-  margin: 5%;
+  margin: 0% 5% 5% 5%;
   border-radius: 5px;
   border-color: #4897cb;
   box-shadow: none;

@@ -9,9 +9,15 @@ import { useState, useEffect } from 'react';
 function OrderSummary() {
   const { count } = useCount();
   const [SubTotal, setSubTotal] = useState(0);
+  const [tax,setTax]= useState(0);
 
 
-  
+  const calculateTax = () => {
+    setTax(count * 3.15); }
+    useEffect(() => {
+
+      calculateTax();
+    }, [count]);
  
     // Calculate the subtotal when the count changes
     const calculateSubtotal = () => {
@@ -37,7 +43,7 @@ function OrderSummary() {
                 <div className='order-summary-product'>Fall Limited Edition Sneakers <br /><b>$125</b>
                 </div>
                 <div className='order-summary-count'>
-                  <Count></Count>
+                  <Count className='order-summary-count-button'></Count>
                 </div>
           </div>
 
@@ -74,7 +80,7 @@ function OrderSummary() {
                   Tax
                   </div>
                   <div className='order-summary-tax-value'>
-                   $3.15
+                 ${tax}
                   </div>
           </div>
 
@@ -95,7 +101,7 @@ function OrderSummary() {
              
                 </div>
                 <div className='order-summary-total-value'>
-                ${SubTotal+3.15}
+                ${SubTotal+tax}
                  </div>
              </div>
 

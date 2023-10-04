@@ -3,8 +3,14 @@
   margin-left: 100px;
   margin-right: 100px;
   position: relative;
+  font-family: kumbh sans;
+ 
 }
-
+@font-face {
+  font-family: kumbh sans;
+  src: url(../src/images/KumbhSans-Regular.ttf);
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,7 +21,7 @@
 }
 .Home > div {
   width: 100%;
-  margin-left: 5%;
+ 
   margin-right: 5%;
 }
 
@@ -27,14 +33,17 @@
 } */
 
 .MuiBadge-root.css-1c32n2y-MuiBadge-root .css-jcn4dz-MuiBadge-badge {
-  background-color: red !important;
+  /* background-color: red !important; */
 }
 
-.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
   color: #FFAB6A !important ;
   border: none !important;
   background-color: #F6F8FD !important;
   
+}
+.inc-dec .dec{
+  background-color: #F6F8FD !important;
 }
 
 button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.MuiButtonGroup-grouped.MuiButtonGroup-groupedHorizontal.MuiButtonGroup-groupedOutlined.MuiButtonGroup-groupedOutlinedHorizontal.MuiButtonGroup-groupedOutlinedPrimary.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium.inc-dec.MuiButtonGroup-middleButton.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{

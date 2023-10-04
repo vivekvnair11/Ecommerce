@@ -16,19 +16,7 @@ const toggleDivVisibility = () => {
     setDivVisible(!isDivVisible);
    };
 
-  useEffect(() => {
-   
-    if (isDivVisible) {
-      document.body.classList.add('body-black-background');
-    } else {
-      document.body.classList.remove('body-black-background');
-    }
 
-   
-    return () => {
-      document.body.classList.remove('body-black-background');
-    };
-   }, [isDivVisible]);
 
 
 

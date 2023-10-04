@@ -1,3 +1,7 @@
+@font-face {
+  font-family: kubh sans bold;
+  src: url('../../images/KumbhSans-Bold.ttf');
+}
 
 
 
@@ -25,7 +29,8 @@ font-family: Kumbh Sans;
     width: 75%;
     height: 96px;
     color: #1D2026;
-font-family: Kumbh Sans;
+font-family: Kumbh Sans bold;
+font-size: 44px;
 font-style: normal;
 font-weight: 700;
 line-height: 48px;
@@ -151,5 +156,11 @@ text-decoration: line-through;
 @media screen and (max-width: 500px) {
   .product-pricing{
     gap: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .product-heading h2{
+    width: 85%;
   }
 }

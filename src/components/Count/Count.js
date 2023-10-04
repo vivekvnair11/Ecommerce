@@ -44,7 +44,7 @@ function Count() {
        
         </Badge>
         <ButtonGroup>
-          <Button className='inc-dec'
+          <Button className='inc-dec dec'
             aria-label="reduce"
             onClick={() => {
               setCount(Math.max(count - 1, 0));
@@ -53,7 +53,7 @@ function Count() {
             <RemoveIcon fontSize="small" />
           </Button>
           <Button className='inc-dec'>{count}</Button>
-          <Button className='inc-dec'
+          <Button className='inc-dec inc'
             aria-label="increase"
              onClick={() => {
             setCount(count + 1);

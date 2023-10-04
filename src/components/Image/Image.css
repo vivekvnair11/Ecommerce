@@ -31,21 +31,23 @@
 }
 
 .carousel{
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
  .carousel .thumb.selected, .carousel .thumb:hover{
-  border-radius: 5px;
+  border-radius: 10px;
   border: 3px solid #FF7E1B !important;
+  opacity: .40;
 }
 
-.body-black-background {
-  background: rgba(15, 14, 14, 0.35); 
-  
-}
+
+
+
 .carousel .thumb{
   padding: 0% !important;
   border: none !important;
+  margin-right: 40px;
+  border-radius: 10px;
 }
 button.control-arrow {
   display: none;
